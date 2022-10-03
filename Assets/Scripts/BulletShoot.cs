@@ -11,10 +11,13 @@ public class BulletShoot : MonoBehaviour
     private GameObject bullet;
     //public GameObject cloud;
     private bool isMouseDown = false;
+    //public Ray ray = Camera.main.ViewportPointToRay(Vector3 position
+    Vector3 worldPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 
 
     void Start()
     {
+        
         //cloud.SetActive(false);
         //bullet_rb = GetComponent<Rigidbody>();
         //newbullet = Instantiate(bullet, new Vector3(0, 0, 0), new Quaternion(0, 0, 0, 0));
@@ -35,6 +38,7 @@ public class BulletShoot : MonoBehaviour
         //Debug.Log(hitInfo.collider.name);
         bullet_movementInput = Input.mousePosition;
         isMouseDown = true;
+        
         Debug.Log("Mouse Button on Bullet is clicked.");
     }
     void Update()
@@ -43,6 +47,8 @@ public class BulletShoot : MonoBehaviour
         {
             //bullet_rb.MovePosition(bullet_rb.position + bullet_movementInput * bullet_speed * Time.deltaTime);
             bullet.transform.position = Vector3.MoveTowards(bullet.transform.position, transform.position, Time.deltaTime * bullet_speed);
+            
+            //bullet.transform.position = Vector3.MoveTowards(bullet.transform.position, worldPosition, Time.deltaTime * bullet_speed);
 
         }
     }

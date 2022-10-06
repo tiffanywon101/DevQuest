@@ -1,0 +1,94 @@
+{
+    "name": "DefaultControls",
+    "maps": [
+        {
+            "name": "Player",
+            "id": "6733d8f0-84b8-49fa-b360-3442e874d8e5",
+            "actions": [
+                {
+                    "name": "Walk",
+                    "type": "Button",
+                    "id": "235827ba-149f-4c5a-83c8-fff38adb086d",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "QuickMove",
+                    "type": "Button",
+                    "id": "a559e04e-f1c6-40fa-a2b6-f47767fddbd9",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": " LocoTarget",
+                    "type": "Value",
+                    "id": "8360d08b-00a5-4c40-8866-a5cceab72870",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "MoveTarget",
+                    "type": "Button",
+                    "id": "e24331a4-82a9-479b-b362-d0115d55ba5b",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "1875cbd0-2e78-4254-8732-82fef104a8d0",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Walk",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "c1080f31-e396-48f8-a4b5-a679770883d2",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "QuickMove",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "aea1e045-9245-4241-b043-f8f0a8ed7fa2",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": " LocoTarget",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "537ec308-cc75-4250-bdcc-3a29766ef7c1",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "MoveTarget",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}

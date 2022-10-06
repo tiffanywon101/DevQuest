@@ -12,7 +12,7 @@ public class BulletShoot : MonoBehaviour
     //public GameObject cloud;
     private bool isMouseDown = false;
     //public Ray ray = Camera.main.ViewportPointToRay(Vector3 position
-    Vector3 worldPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+    //Vector3 worldPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 
 
     void Start()

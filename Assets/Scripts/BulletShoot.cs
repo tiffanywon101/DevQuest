@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class BulletShoot : MonoBehaviour
 {
@@ -10,7 +11,11 @@ public class BulletShoot : MonoBehaviour
     public GameObject prefabBullet;
     private GameObject bullet;
     //public GameObject cloud;
+    [SerializeField]
+    private Text ScoreText;
     private bool isMouseDown = false;
+
+    public float PlayerScore;
     //public Ray ray = Camera.main.ViewportPointToRay(Vector3 position
     //Vector3 worldPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 
@@ -38,7 +43,11 @@ public class BulletShoot : MonoBehaviour
         //Debug.Log(hitInfo.collider.name);
         bullet_movementInput = Input.mousePosition;
         isMouseDown = true;
+        ScoreText = GetComponent<Text>();
+        PlayerScore = 0;
         
+
+
         Debug.Log("Mouse Button on Bullet is clicked.");
     }
     void Update()
@@ -60,6 +69,7 @@ public class BulletShoot : MonoBehaviour
         {
             Destroy(bullet);
             Debug.Log("Bullet Destroyed");
+            ScoreText.text = "SCORE: " + PlayerScore;
         }
     }
 }

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class CloudLife : MonoBehaviour
 {
@@ -9,6 +10,7 @@ public class CloudLife : MonoBehaviour
     public GameObject clouds;
     ParticleSystem scatterParticle;
     public bool scatterisOn;
+ 
     //public GameObject cloudPrefab;
     void Start()
     {
@@ -26,6 +28,8 @@ public class CloudLife : MonoBehaviour
             if (_CloudLife > 0)
             {
                 _CloudLife -=10;
+                
+
             }
             else
             {
